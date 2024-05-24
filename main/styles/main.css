@@ -1,0 +1,165 @@
+html{
+	width: 100vw;
+	height: 100vh;
+
+	background: var(--bg-col);
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+body{
+	width: var(--app-width);
+	height: 100%;
+	margin: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+header, footer{
+	width: 100%;
+	min-height: 50px;
+	margin: 5px;
+	padding: 10px 15px;
+
+	color: white;
+	font-size: 24pt;
+	font-family: "candara";
+	text-align: center;
+
+	box-sizing: border-box;
+}
+
+header, footer, menu, page{
+	border-radius: 4px;
+	background: var(--app-col);
+	border-top: 2px solid var(--border-col);
+	border-bottom: 2px solid var(--shadow-col);
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main{
+	color: #ac9bbd;
+	font-size: 13pt;
+	font-family: "courier new";
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	line-height: 23px;
+}
+
+::selection{
+	background: #bf72e526;
+	color: white;
+	text-shadow: none;
+}
+
+/*
+button{
+	height: 35px;
+	margin: 0 3px;
+	padding: 0 15px;
+
+	background: var(--btn-col);
+	border: 0;
+	border-radius: 4px;
+
+	color: white;
+	font-size: 14pt;
+	font-family: "candara";
+	cursor: pointer;
+
+	transition: 0.4s ease;
+}
+
+button:hover{
+	background: var(--btn-light-col);
+}
+*/
+
+main{
+	width: var(--app-width);
+
+	display: flex;
+	justify-content: center;
+}
+
+main menu{
+	width: 80px;
+	height: 100%;
+	margin: 0;
+	padding: 10px 0;
+	margin-right: 3px;
+
+	box-sizing: border-box;
+}
+
+main page{
+	width: 100%;
+	min-height: 100px;
+	height: var(--app-height);
+	margin-left: 3px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	box-sizing: border-box;
+}
+
+menu-btn{
+	width: 80px;
+	height: 60px;
+	padding: 5px 0;
+
+	position: relative;
+	z-index: 30;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	cursor: pointer;
+
+	transition: ease 0.4s;
+}
+
+menu-btn:hover::after{
+	opacity: 1;
+}
+
+menu-btn::after{
+	content: "";
+
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: 40;
+	opacity: 0;
+
+	background: linear-gradient(to left, #d388ea38, transparent);
+
+	transition: ease 0.4s;
+}
+
+main menu img{
+	width: 40px;
+	height: 40px;
+
+	z-index: 50;
+}
+
+main menu text{
+	font-size: 0.7em;
+
+	z-index: 50;
+}

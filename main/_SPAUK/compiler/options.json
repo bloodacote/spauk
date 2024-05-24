@@ -1,0 +1,23 @@
+{
+	"title": "SPAuk engine",
+	"version": "build v1",
+	"author": "bloodacote",
+
+	"js_compiled_path": "/_SPAUK/compiler/releases/spauk.js",
+	"php_compiled_path": "/_SPAUK/compiler/releases/spauk.php",
+
+	"js_dir": "/_SPAUK/js-engine",
+	"php_dir": "/_SPAUK/php-engine",
+
+	"js_files": [
+		"/load-funcs.js",
+		"/partos-ultra.js",
+		"/router.js"
+	],
+
+	"php_files": [
+		"/core.php",
+		"/api-tools.php",
+		"/db-funcs.php"
+	]
+}

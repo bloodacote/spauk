@@ -1,0 +1,103 @@
+
+
+/* ЗАГОЛОВОК И ПОДЗАГОЛОВОК */
+
+ui-title, ui-subtitle{
+	width: 100%;
+	padding: 15px 20px;
+	font-size: 1.75em;
+
+	color: white;
+
+	box-sizing: border-box;
+}
+
+ui-subtitle{
+	padding: 3px 20px;
+	font-size: 1.05em;
+	opacity: 0.6;
+
+	box-sizing: border-box;
+}
+
+.ui-input{
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ui-input-deco{
+	width: 90%;
+	height: 25px;
+	padding: 0px 10px;
+	padding-top: 15px;
+	padding-bottom: -5px;
+
+	display: flex;
+}
+
+.ui-input-deco img{
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+
+	display: flex;
+	flex-shrink: 0;
+}
+
+.ui-input-deco text{
+	width: 100%;
+	height: 100%;
+
+	font-family: var(--text-font);
+	color: white;
+	font-size: 1.1em;
+}
+
+.ui-input input{
+	width: 90%;
+	height: 25px;
+	padding: 3px 10px;
+	margin: 10px 0;
+
+	font-size: 1em;
+
+	background: var(--dark-col);
+	border: 0;
+	border-bottom: 2px solid transparent;
+	border-radius: 4px;
+	color: white;
+
+	outline: none;
+	transition: ease 0.4s;
+}
+
+.ui-input input:focus{
+	border-bottom-color: var(--theme-col);
+}
+
+ui-button{
+	width: 70%;
+	height: 35px;
+	margin: 5px 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: var(--btn-col);
+	border-radius: 4px;
+
+	color: white;
+	font-size: 14pt;
+	font-family: "candara";
+	cursor: pointer;
+
+	transition: 0.4s ease;
+}
+
+ui-button:hover{
+	background: var(--btn-light-col);
+}

@@ -1,0 +1,25 @@
+
+:root{
+
+	/* ЦВЕТА */
+	--bg-col: linear-gradient(205deg, #250425, #040708);
+	--app-col: #2d2535c4;
+    --border-col: #3d344b;
+    --shadow-col: rgba(0,0,0,0.3);
+    --btn-col: #47384f;
+    --btn-light-col: #605473;
+
+    --dark-col: #1d1523;
+
+    --theme-col: #c9b1e2;
+
+
+	/* РАЗМЕРЫ */
+	--app-width: 600px;
+	--app-height: 400px;
+
+
+	/* ТЕКСТ */
+	--text-font: "Calibri";
+
+}
